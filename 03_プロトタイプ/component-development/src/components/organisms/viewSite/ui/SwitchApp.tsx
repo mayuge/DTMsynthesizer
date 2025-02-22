@@ -38,7 +38,7 @@ const SwitchApp: React.FC = () => {
     <div className="h-calc-100vh gap-2 z-10 bg-gray-20 shadow-md shadow-black">
       <Button
         text=""
-        iconLeft="home"
+        iconLeft="clear_all"
         variant={HomeModeSelected ? "btn-danger" : "btn-dark"}
         size="small"
         shape="square"
@@ -50,7 +50,7 @@ const SwitchApp: React.FC = () => {
       />
       <Button
         text=""
-        iconLeft="person"
+        iconLeft="queue_music"
         variant={PersonModeSelected ? "btn-warning" : "btn-dark"}
         size="small"
         shape="square"
@@ -62,7 +62,7 @@ const SwitchApp: React.FC = () => {
       />
       <Button
         text=""
-        iconLeft="groups"
+        iconLeft="music_note"
         variant={GroupModeSelected ? "btn-success" : "btn-dark"}
         size="small"
         shape="square"

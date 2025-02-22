@@ -23,7 +23,7 @@ const HeaderApp: React.FC = () => {
       </div>
 
       <div className="flex items-center justify-between bg-back shadow-black shadow-sm pr-4">
-        <div className="flex items-center gap-11">
+        <div className="flex items-center py-2">
           <LampCard
             text={`${getModeText()}`}
             variant={`${getModeColor()}`}
@@ -31,8 +31,8 @@ const HeaderApp: React.FC = () => {
           />
         </div>
         <div className="flex items-center gap-2">
-          <Button iconLeft="add" text="活動記録の新規作成" size="mini" variant="btn-primary" />
-          <Button iconLeft="add" text="プロジェクトの新規作成" size="mini" variant="btn-success" />
+          <Button iconLeft="add" text="新規プロジェクト作成" size="mini" variant="btn-primary" />
+          <Button iconLeft="add" text="音源の書き出し" size="mini" variant="btn-success" />
         </div>
       </div>
     </div>
