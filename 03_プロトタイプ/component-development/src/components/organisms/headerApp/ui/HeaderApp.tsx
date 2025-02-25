@@ -3,7 +3,7 @@ import React from "react"
 import Header from "@/components/molecules/header/Header"
 import Button from "@/components/atoms/buttons/Button"
 import SearchInput from "@/components/molecules/forms/SearchInput"
-import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
+import useHomeSiteMain from "@/components/templates/homeSite/core/useHomeSiteMain"
 import LampCard from "@/components/molecules/frames/LampCard"
 
 const HeaderApp: React.FC = () => {

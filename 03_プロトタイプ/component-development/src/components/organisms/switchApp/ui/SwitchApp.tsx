@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react"
 import Button from "@/components/atoms/buttons/Button"
-import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
+import useHomeSiteMain from "@/components/templates/homeSite/core/useHomeSiteMain"
 
 const SwitchApp: React.FC = () => {
   const {

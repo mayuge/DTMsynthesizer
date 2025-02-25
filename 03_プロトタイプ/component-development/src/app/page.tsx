@@ -1,6 +1,6 @@
 import React from "react"
 
-import HomeSite from "@/components/templates/homeSite/HomeSite"
+import HomeSiteMain from "@/components/templates/homeSite/ui/HomeSiteMain"
 type MainLayoutProps = {
   children: React.ReactNode
 }
@@ -10,7 +10,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     <div>
       <main>
         {children}
-        <HomeSite />
+        <HomeSiteMain />
       </main>
     </div>
   )

@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
+import useHomeSiteMain from "@/components/templates/homeSite/core/useHomeSiteMain"
 import ProjectCard from "@/components/molecules/frames/ProjectCard"
 import PullTab from "@/components/atoms/buttons/PullTab"
 

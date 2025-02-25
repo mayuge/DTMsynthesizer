@@ -1,9 +1,9 @@
 "use client"
 import React from "react"
-import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
+import useHomeSiteMain from "@/components/templates/homeSite/core/useHomeSiteMain"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 
-const RelationApp: React.FC = () => {
+const PanelApp: React.FC = () => {
   const {} = useHomeSiteMain()
   return (
     <div className="w-full px-4 pb-2">
@@ -16,4 +16,4 @@ const RelationApp: React.FC = () => {
   )
 }
 
-export default RelationApp
+export default PanelApp
