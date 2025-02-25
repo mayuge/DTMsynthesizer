@@ -1,11 +1,11 @@
 "use client"
 import React from "react"
-import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
+import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 import AccountCard from "@/components/molecules/frames/AccountCard"
 import PullTab from "@/components/atoms/buttons/PullTab"
 
 const LayerListBarApp: React.FC = () => {
-  const { setLayerBarOpen, getLayerBarOpen } = useViewSiteMain()
+  const { setLayerBarOpen, getLayerBarOpen } = useHomeSiteMain()
 
   if (!getLayerBarOpen()) {
     return (

@@ -1,11 +1,11 @@
 "use client"
 import React from "react"
-import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
+import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 import ProjectCard from "@/components/molecules/frames/ProjectCard"
 import PullTab from "@/components/atoms/buttons/PullTab"
 
 const ProjectListApp: React.FC = () => {
-  const { setModeDialogOpen, getModeDialogOpen } = useViewSiteMain()
+  const { setModeDialogOpen, getModeDialogOpen } = useHomeSiteMain()
 
   // ダイアログが閉じている場合は何も描画しない
   if (!getModeDialogOpen()) {

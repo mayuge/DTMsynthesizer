@@ -1,10 +1,10 @@
 "use client"
 import React from "react"
-import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
+import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 
 const RelationApp: React.FC = () => {
-  const {} = useViewSiteMain()
+  const {} = useHomeSiteMain()
   return (
     <div className="w-full px-4 pb-2">
       <div className="w-full h-[400px] bg-back shadow-black shadow-md">

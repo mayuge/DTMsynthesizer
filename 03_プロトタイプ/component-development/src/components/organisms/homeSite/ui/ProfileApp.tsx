@@ -1,10 +1,10 @@
 "use client"
 import React from "react"
-import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
+import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 
 const ProfileApp: React.FC = () => {
-  const { routeToHomeSite } = useViewSiteMain()
+  const { routeToHomeSite } = useHomeSiteMain()
   return (
     <div className="w-full flex px-4 py-2 gap-4">
       <div className="w-full h-[250px] bg-back shadow-black shadow-md">

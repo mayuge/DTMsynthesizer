@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react"
 import Button from "@/components/atoms/buttons/Button"
-import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
+import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 
 const SwitchApp: React.FC = () => {
   const {
@@ -14,7 +14,7 @@ const SwitchApp: React.FC = () => {
     setGroupModeSelected,
     setPersonModeSelected,
     setHomeModeSelected,
-  } = useViewSiteMain()
+  } = useHomeSiteMain()
 
   // ローカルステートに値を同期
   const [FileModeSelected, setFileModeSelectedLocal] = useState(false)

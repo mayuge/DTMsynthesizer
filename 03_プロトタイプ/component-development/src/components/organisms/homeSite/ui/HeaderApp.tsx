@@ -3,11 +3,11 @@ import React from "react"
 import Header from "@/components/molecules/header/Header"
 import Button from "@/components/atoms/buttons/Button"
 import SearchInput from "@/components/molecules/forms/SearchInput"
-import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
+import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 import LampCard from "@/components/molecules/frames/LampCard"
 
 const HeaderApp: React.FC = () => {
-  const { getModeColor, getModeText, getModeIcon, routeToHomeSite } = useViewSiteMain()
+  const { getModeColor, getModeText, getModeIcon, routeToHomeSite } = useHomeSiteMain()
 
   return (
     <div className="relative items-center bg-back w-full">
