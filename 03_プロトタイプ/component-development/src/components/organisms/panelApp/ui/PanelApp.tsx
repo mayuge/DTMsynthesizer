@@ -1,40 +1,38 @@
-import React, { useEffect, useRef } from "react"
+import React, { useState } from "react"
 import useHomeSiteMain from "@/components/templates/homeSite/core/useHomeSiteMain"
 import TextLabel from "@/components/atoms/labels/TextLabel"
-import WaveSurfer from "wavesurfer.js"
+import WavesurferPlayer from "@wavesurfer/react"
 
 const PanelApp: React.FC = () => {
   const {} = useHomeSiteMain()
-  const waveformRef = useRef<HTMLDivElement>(null)
-  const wavesurferRef = useRef<WaveSurfer | null>(null)
+  const [wavesurfer, setWavesurfer] = useState<any>(null)
+  const [isPlaying, setIsPlaying] = useState(false)
 
-  useEffect(() => {
-    if (waveformRef.current) {
-      wavesurferRef.current = WaveSurfer.create({
-        container: waveformRef.current,
-        waveColor: "violet",
-        progressColor: "purple",
-        backend: "WebAudio",
-        height: 100,
-      })
+  const onReady = (ws: any) => {
+    setWavesurfer(ws)
+    setIsPlaying(false)
+  }
 
-      // 音源ファイルをロード
-      wavesurferRef.current.load("music/music.wav")
+  const onPlayPause = () => {
+    if (wavesurfer) {
+      wavesurfer.playPause()
     }
-
-    return () => {
-      if (wavesurferRef.current) {
-        wavesurferRef.current.destroy()
-      }
-    }
-  }, [])
+  }
 
   return (
     <div className="w-full px-4 pb-2">
       <div className="w-full h-[400px] bg-back shadow-black shadow-md">
         <div className="p-2">
           <TextLabel text="トラック一覧" size="normal" bold={true} isBlack={false} />
-          <div ref={waveformRef} className="waveform"></div>
+          <WavesurferPlayer
+            height={100}
+            waveColor="violet"
+            url="/music/music.wav"
+            onReady={onReady}
+            onPlay={() => setIsPlaying(true)}
+            onPause={() => setIsPlaying(false)}
+          />
+          <button onClick={onPlayPause}>{isPlaying ? "Pause" : "Play"}</button>
         </div>
       </div>
     </div>

@@ -2181,6 +2181,11 @@
     loupe "^3.1.2"
     tinyrainbow "^1.2.0"
 
+"@wavesurfer/react@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@wavesurfer/react/-/react-1.0.9.tgz#7ee038d48ba22293858dd575b38c6db153c886f7"
+  integrity sha512-HD3x+p48kWITd3tCOA7KG+6zae8btulNjSTdnRmgrtp9/XPzXc61ZCaPgbqT0gioPGhIcvBcpXZAmnhE8lUDBw==
+
 "@webassemblyjs/ast@1.14.1", "@webassemblyjs/ast@^1.12.1":
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.14.1.tgz#a9f6a07f2b03c95c8d38c4536a1fdfb521ff55b6"
